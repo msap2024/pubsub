@@ -1,5 +1,54 @@
 {
   "devDependencies": {
+    "@semantic-release/github": "^8.0.4",
+    "@semantic-release/npm": "^9.0.1",
     "semantic-release": "^19.0.2"
-  }
+  },
+  "name": "pubsub",
+  "description": "",
+  "version": "0.0.0-development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msap2024/pubsub.git"
+  },
+  "release": {
+    "branches": [
+      "main",
+      "develop"
+      "release"
+      "feature"
+    ]
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "dist/asset.min.css",
+            "label": "CSS distribution"
+          },
+          {
+            "path": "dist/asset.min.js",
+            "label": "JS distribution"
+          }
+        ]
+      }
+    ]
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msap2024/pubsub/issues"
+  },
+  "homepage": "https://github.com/msap2024/pubsub#readme"
 }
