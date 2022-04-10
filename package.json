@@ -19,8 +19,8 @@
   "release": {
     "branches": [
       "main",
-      "develop"
-      "release"
+      "develop",
+      "release",
       "feature"
     ]
   },
@@ -28,7 +28,7 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/npm",
-    "@semantic-release/git"
+    "@semantic-release/git",
     [
       "@semantic-release/github",
       {
